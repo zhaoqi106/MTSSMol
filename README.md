@@ -30,6 +30,12 @@ $ cd MTSSMol
 
 Data for pre-training can be obtained by contacting the author. All the databases for fine-tuning are saved in the folder under the benchmark name. You can also find the benchmarks from [MoleculeNet](https://moleculenet.org/).
 
+### Prepare dataset
+Assign pseudo-labels to the data：
+```
+$ python pseudo_label_process.py.py
+```
+
 ### Pre-training
 
 To train the MTSSMol, where the configurations and detailed explaination for each variable can be found in `config.yaml`
@@ -45,7 +51,11 @@ To fine-tune the MTSSMol pre-trained model on downstream molecular benchmarks, w
 ```
 $ python finetune.py
 ```
-
+### Evaluation
+We provided a prediction method for the FGFR1 dataset，then the results can be reproduced by:
+```
+$ python evaluation.py
+```
 ### Pre-trained models
 
 We also provide pre-trained  GIN models, which can be found in `ckpt/pretrained_gin`. 
