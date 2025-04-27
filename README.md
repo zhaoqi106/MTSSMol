@@ -33,7 +33,7 @@ Data for pre-training can be obtained by contacting the author. All the database
 ### Prepare dataset
 Assign pseudo-labels to the data：
 ```
-$ python pseudo_label_process.py.py
+$ python pseudo_label_process.py
 ```
 
 ### Pre-training
