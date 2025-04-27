@@ -52,7 +52,7 @@ To fine-tune the MTSSMol pre-trained model on downstream molecular benchmarks, w
 $ python finetune.py
 ```
 ### Evaluation
-We provided a prediction method for the FGFR1 dataset，then the results can be reproduced by:
+We provided a prediction method for the FGFR1 dataset under the transfer learning setting to ensure the repeatability of the test results reported in this paper, then the results can be reproduced by:
 ```
 $ python evaluation.py
 ```
